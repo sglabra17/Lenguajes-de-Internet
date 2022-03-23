@@ -1,0 +1,227 @@
+/* configuración general */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilos del cuerpo */
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%231ca817' fill-opacity='0.12' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* cabecera de la página*/
+header{
+    width: 100%;
+    margin: 5px;
+    padding-left: 5%;
+    margin-right: 0;
+    margin-left: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* logotipo de la empresa */
+#logo{
+    width: 100px;
+    display: inline-block;
+    transform: rotate(35deg);
+}
+
+/* nombre de la empresa */
+#titulo{
+    display: inline-block;
+    font-size: 45px;
+    color: rgba(255, 166, 0, 0.658);
+    text-shadow: 2px 3px 0.5px rgb(9, 30, 223);
+    position: relative;
+    bottom: 28px;
+}
+
+#titlesp{
+    color: rgb(162, 0, 255);
+}
+
+#titulo, #slogan{
+    margin: 0;
+}
+
+/* sección principal de la página */
+main{
+    width: 100%;
+    height: 570px;
+    padding: 0px 25px 25px 25px;
+}
+
+/* contenedor de formulario */
+#contenedor_form{
+    margin: 15px auto;
+    box-sizing: border-box;
+    /* background-color: yellow; */
+}
+
+/* formulario login */
+#form_login{
+    width: 400px;
+    margin: 0 auto;
+    /* background-color: brown; */
+    text-align: center;
+}
+
+/* titulo formulario */
+#titulo_form{
+    font: bold 39px sans-serif;
+}
+
+/* slogan de la empresa */
+#slogan{
+    margin-top: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 20px;
+}
+
+#btn_login:hover{
+    cursor: pointer;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+/* botones login */
+#fb_login:active{
+    border: solid 2px rgba(10, 87, 109, 0.904);
+}
+
+#gg_login:active{
+    border: solid 2px rgba(10, 87, 109, 0.904);
+}
+
+#fb_login, #gg_login{
+    width: 85%;
+    background-color: rgb(0, 119, 255);
+    display: block;
+    margin: 15px auto;
+    padding: 15px 35px;
+    border-radius: 5px;
+    border: none;
+}
+
+#gg_login{
+    background-color: white;
+    margin-bottom: 25px;
+}
+
+#fb_icon{
+    color: white;
+}
+
+/* texto de botones (facebook & google) */
+#btn_txt{
+    margin-left: 10px;
+    font: bold 15px sans-serif;
+    color: white;
+}
+
+#btn_txt2{
+    font: bold 15px sans-serif;
+    color: black;
+}
+
+/* etiquetas (Usuario,Contraseña)*/
+#lb_usuario, #lb_clave{
+    margin: 5px 8%;
+    display: block;
+    text-align: left;
+    font: bold 15px sans-serif;
+}
+
+/* cajas de texto (Usuario,Contraseña) */
+#in_usuario:focus { 
+    outline: none;
+    border: solid 1px greenyellow;
+}
+
+#in_clave:focus{
+    outline: none;
+    border: solid 1px greenyellow;
+}
+
+#in_usuario, #in_clave{
+    width: 85%;
+    margin-bottom: 10px;
+    padding: 15px 15px;
+    background-color: hsla(180, 49%, 28%, 0.85);
+    border-radius: 5px;
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: 15px;
+}
+
+/* botón (Iniciar sesión) */
+#btn_login{
+    width: 85%;
+    margin-top: 5px;
+    margin-bottom: 35px;
+    padding: 15px 15px;
+    background-color: rgba(1, 51, 1, 0.9);
+    border-radius: 5px;
+    border: none;
+    font: bold 18px sans-serif;
+    color: rgba(255, 255, 255, 0.39);
+}
+
+/* botones (registro) */
+#registro_pregunta, #registro_btn1{
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    color: white;
+}
+
+#registro_pregunta{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+#registro_btn1, #registro_btn2{
+    color: #BE7C4D;
+}
+
+#registro_btn1{
+    margin-left: 15px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
+}
+
+#registro_btn2{
+    margin: 15px auto;
+    display: block;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
